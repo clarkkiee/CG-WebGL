@@ -62,7 +62,7 @@ const initializeWebGLRendering = async () => {
   const meshProg = webglUtils.createProgramInfo(gl, [vs, fs]);
 
   const render = (timeNow) => {
-    timeNow *= 0.001;
+    timeNow *= 0.0004;
     const delta = timeNow - prevTime;
     prevTime = timeNow;
 
